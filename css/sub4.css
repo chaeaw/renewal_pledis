@@ -1,0 +1,152 @@
+.sub4_m{display: none;}
+.sub4{display: block; width: 100%;}
+
+@media all and (max-width: 640px){
+    .sub4_m{display: block; width: 100%;}
+    .sub4{display: none;}
+}
+
+
+/* main_visual */
+figure.main_visual{}
+.main_visual .m_v{background: url(../img/pledis/subpage/sub4_m_v.jpg) no-repeat center; width: 100%; height: 410px; position: relative;}
+.main_visual .m_v .title{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); color: #fff; text-align: center;}
+.main_visual .m_v .title h2{ font: 60px 'Hind', sans-serif;}
+.main_visual .m_v .navi{position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%);}
+.main_visual .m_v .navi a{ color: #ccc; font: 16px 'Hind', sans-serif; opacity: 0.8; display: inline-block;}
+.main_visual .m_v .navi .hm{margin-right: 30px; position: relative;}
+.main_visual .m_v .navi .hm::after{content: '>'; display: block; position: absolute; top: 0; right: -22px; cursor: initial;}
+
+/* section */
+#section{}
+
+/* section01_notice */
+.section01_notice{ max-width: 1280px; margin: 100px auto;}
+.section01_notice .titleWrap{text-align: center;}
+.section01_notice .titleWrap h3{font: 63px 'Barlow CondensedM'; color: #333; margin: 0;}
+
+/* table */
+.board_list{margin-top: 80px;}
+.board_list table{
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    border: 0;
+    font-size: 18px;
+    border-collapse: collapse;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.board_list table thead tr{height: 60px;}
+.board_list table thead tr td{padding: 10px 0;}
+.board_list table td.board_list_uid{ width: 130px;}
+.board_list table td.board_list_title{ width: auto;}
+.board_list table td.board_list_date{ width: 130px;}
+
+.board_list table td{
+    height: auto;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.board_list table  tr{
+    height: 74px;
+    border-bottom: 1px solid #eee;
+}
+
+.board_list table thead tr td{
+    font:500 20px 'Noto Sans KR',sans-serif;
+    color: #333;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    ;
+}
+.board_list table tbody td.board_list_title{
+    text-align: left;
+    padding-left: 30px;
+}
+.board_list table tbody td.board_list_title a{ color: #333;}
+.board_list table tbody td.board_list_title a:hover{color: #8593d2;}
+
+.board_list table tbody td.board_list_date{
+    font-size: 16px; color: #666;
+}
+
+/* pagination */
+.board_pagination{ margin-top: 30px;}
+.board_pagination ul{text-align: center;}
+.board_pagination ul li{ display: inline-block; position: relative; width: 32px; height: 32px; text-align:center;}
+.board_pagination ul li a{color: #aaa; font:100 16px/32px 'Noto Sans KR',sans-serif; font-weight: normal;}
+.board_pagination ul li.active a{ color: #fff; z-index: 13;}
+.board_pagination ul li.active{ background-color: #8593d2;}
+
+/* board_search_form */
+form{}
+form .board_search{ text-align: center; margin-top: 30px; font-family: 'Noto Sans KR',sans-serif;}
+form .board_search select.board_search_select{height: 32px; border: 1px solid #ccc; 
+    padding-left: 5px; padding-right: 25px;
+    -webkit-appearance:none; /* for chrome */
+    -moz-appearance:none; /*for firefox*/
+    appearance:none;
+    background: #fff url(../img/pledis/subpage/sub4_search_arrow.png) no-repeat right center;}
+form .board_search input{ height: 30px; line-height: 30px; border: 1px solid #ccc; padding-left: 5px; padding-right: 5px;}
+form .board_search input.board_search_field{width: 182px;}
+form .board_search input.search_btn{ height: 30px; font-size: 16px; background-color: #3a3a3a; color: #fff; cursor: pointer; padding: 0 15px; width: 30px; outline: none; border: 1px solid #3a3a3a; line-height: 30px;}
+
+
+
+
+
+
+@media all and (max-width:1279px){
+    .section01_notice{ margin-left: 5%; margin-right: 5%;}
+    .board_list{margin-top: 6%;}
+
+
+}
+
+@media all and (max-width:1024px){
+    .main_visual .m_v{ background-size: contain; height: 21vw;}
+    .main_visual .m_v .title h2{font-size: 7vw;}
+    .main_visual .m_v .navi{display: none;}
+
+    .section01_notice{margin-top: 60px;}
+
+
+    .board_list table thead tr{height: 6vw}
+    .board_list table tr{ height: 7.6vw}
+    .board_list table thead tr td{
+        font:500 2.2vw 'Noto Sans KR',sans-serif;
+    }
+    .board_list table tbody tr.board_list_notice td.board_list_uid img{width: 9vw;}
+    .board_list table tbody tr.board_list_notice td.board_list_uid{font-size: 2vw;}
+    .board_list table td.board_list_uid{font-size: 1.9vw;}
+    .board_list table tbody td.board_list_title a{font-size: 1.9vw;}
+    .board_list table tbody td.board_list_date{font-size: 1.9vw;}
+    .board_list table tbody td.board_list_title a div{
+        overflow:hidden;
+        text-overflow:ellipsis;
+        white-space:nowrap;
+
+    }
+}
+
+@media all and (max-width: 640px){
+    .section01_notice{margin-bottom: 60px;}
+    #section .titleWrap h3{font-size: 8vw;}
+    #section .titleWrap p{font-size: 3vw;}
+
+    .board_list table  tr{height: ;}
+    .board_list table td.board_list_uid{display: none;}
+    .board_list table tbody tr.board_list_notice td.board_list_uid{font-size: 2.5vw;}
+    .board_list table tbody td.board_list_title a{font-size: 2.2vw;}
+    .board_list table tbody td.board_list_date{font-size: 2vw;}
+
+    .board_pagination ul li{ display: inline-block; position: relative; width: 28px; height: 28px; text-align:center;}
+    .board_pagination ul li a{color: #aaa; font:100 14px/28px 'Noto Sans KR',sans-serif; font-weight: normal;}
+
+
+    form .board_search select.board_search_select{height: 30px; }
+    form .board_search input{ height: 28px; line-height: 28px; }
+    form .board_search input.search_btn{ height: 28px; line-height: 28px; font-size: 14px }
+}

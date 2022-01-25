@@ -1,0 +1,148 @@
+.sub3_m{display: none;}
+
+@media all and (max-width: 640px){
+    .sub3_m{display: block; width: 100%;}
+
+}
+
+
+/* main_visual */
+figure.main_visual{}
+.main_visual .m_v{background: url(../img/pledis/subpage/sub3_m_v.jpg) no-repeat center; width: 100%; height: 410px; position: relative;}
+.main_visual .m_v .title{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); color: #fff; text-align: center;}
+.main_visual .m_v .title h2{ font: 60px 'Hind', sans-serif;}
+.main_visual .m_v .title p{ font:100 16px 'Noto Sans KR',sans-serif;}
+.main_visual .m_v .navi{position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%);}
+.main_visual .m_v .navi a{ color: #ccc; font: 16px 'Hind', sans-serif; opacity: 0.8; display: inline-block;}
+.main_visual .m_v .navi .hm{margin-right: 30px; position: relative;}
+.main_visual .m_v .navi .hm::after{content: '>'; display: block; position: absolute; top: 0; right: -22px; cursor: initial;}
+
+/* section */
+#section{}
+
+/* section01_step */
+.section01_step{ max-width: 1280px; margin: 100px auto;}
+.section01_step .titleWrap{text-align: center;}
+.section01_step .titleWrap h3{font: 63px 'Barlow CondensedM'; color: #333; margin: 0;}
+.section01_step .titleWrap p{font: 18px  'Noto Sans KR', sans-serif; color: #555}
+
+.section01_step ul.boxes{width: 100%; margin-top: 80px; }
+.section01_step ul.boxes li{float: left; width: 31%; margin-right: 2%; border: 1px solid #ccc; display: block; height: 240px; position: relative;}
+.section01_step ul.boxes li:nth-child(2)::before{content: ''; display: block; width: 60px; height: 60px; background: url(../img/pledis/subpage/sub3_arrow.jpg) no-repeat center; position: absolute; top: 50%; left: -45px; transform: translateY(-50%);}
+.section01_step ul.boxes li:nth-child(3)::before{content: ''; display: block; width: 60px; height: 60px; background: url(../img/pledis/subpage/sub3_arrow.jpg) no-repeat center; position: absolute; top: 50%; left: -45px; transform: translateY(-50%);}
+.section01_step ul.boxes li:nth-child(3n){margin-right: 0 !important;}
+.section01_step ul.boxes li:nth-child(3n+1){margin-left: 1%;}
+.section01_step ul.boxes li>p.img{display: block; text-align: center; padding-top: 29px;}
+.section01_step ul.boxes li>p>img{}
+.section01_step ul.boxes li p{text-align: center; display: block; font:100 18px 'Noto Sans KR',sans-serif; margin-top: 20px;}
+.section01_step .subs{text-align: center; font:100 16px/1.8 'Noto Sans KR',sans-serif; color: #666; margin-top: 20px; }
+.section01_step .subs p{ position: relative; padding-left: 20px; display: block;}
+
+/* section02_recruit */
+.section02_recruit{max-width: 1280px; margin: 200px auto;}
+.section02_recruit .titleWrap{text-align: center;}
+.section02_recruit .titleWrap h3{font: 63px 'Barlow CondensedM'; color: #333; margin: 0;}
+.section02_recruit .titleWrap p{font: 18px  'Noto Sans KR', sans-serif; color: #555}
+
+.section02_recruit ul.boxes2{width: 100%; margin-top: 80px; }
+.section02_recruit ul.boxes2 li{float: left; width: 18%; margin-right: 2%; border: 1px solid #eee; height: 240px;}
+.section02_recruit ul.boxes2 li:nth-child(5n){margin-right: 0;}
+.section02_recruit ul.boxes2 li:nth-child(5n+1){margin-left: 0.5%;}
+.section02_recruit ul.boxes2 li p.img2{ text-align: center; padding-top: 15px;}
+.section02_recruit ul.boxes2 li p.img2 img{}
+.section02_recruit ul.boxes2 li p{text-align: center; display: block; font: 100 18px 'Noto Sans KR',sans-serif; margin-top: 20px;}
+.section02_recruit .subs2{text-align: center; font:100 16px/1.8 'Noto Sans KR',sans-serif; color: #666; margin-top: 20px; }
+.section02_recruit .subs2 p{ position: relative; padding-left: 20px; display: block;}
+.section02_recruit .subs2 p strong{color: #8593d2;}
+
+/* section03_apply */
+.section03_apply{max-width: 1280px; margin: 100px auto;}
+.section03_apply .titleWrap{text-align: center;}
+.section03_apply .titleWrap h3{font: 63px 'Barlow CondensedM'; color: #333; margin: 0;}
+.section03_apply .titleWrap p{font: 18px  'Noto Sans KR', sans-serif; color: #555}
+
+.section03_apply .devider{}
+
+.section03_apply table{ margin-top: 80px; border-top: 1px solid #8593d2; width: 100%; border-bottom: 1px solid #eee;}
+.section03_apply table.pc_table colgroup col.tt{width: 220px;}
+
+.section03_apply table.pc_table tbody{}
+.section03_apply table.pc_table tbody tr{}
+.section03_apply table.pc_table tbody tr th{padding: 20px 30px; background: url("../img/pledis/subpage/sub3_line.jpg") no-repeat 188px 27px; font: 18px 'Noto Sans KR',sans-serif; color: #333;}
+.section03_apply table.pc_table tbody tr td{font:100 16px/1.8 'Noto Sans KR',sans-serif ; color: #555; padding-bottom: 30px;}
+.section03_apply table.pc_table tbody tr td strong{color: #8593d2;}
+
+.section03_apply p.subs3{ position: relative; padding-left: 20px; display: block; font: 100 16px 'Noto Sans KR',sans-serif; color: #777; margin-top: 15px;}
+
+/* m_table */
+.section03_apply table.m_table{text-align: center; padding-bottom: 20px; margin: 40px auto; width: 100%; display: none;}
+.section03_apply table.m_table tbody{}
+.section03_apply table.m_table tbody tr{}
+.section03_apply table.m_table tbody tr th{ font: 16px 'Noto Sans KR',sans-serif; color: #333; padding: 20px 0;}
+.section03_apply table.m_table tbody tr td{font:100 14px/1.8 'Noto Sans KR',sans-serif ; color: #555; padding-bottom: 10px;}
+.section03_apply table.m_table tbody tr td strong{color: #8593d2;}
+.section03_apply table.m_table tbody tr:nth-child(3) td{padding: 10px 0; box-sizing: border-box;}
+
+.section03_apply p.subs3_1{ position: relative; padding-left: 20px; display: block; font: 100 14px 'Noto Sans KR',sans-serif; color: #777; margin-top: 15px; text-align: center; display: none;}
+
+
+@media all and (max-width:1279px){
+
+    .section03_apply{max-width: 1280px; margin: 100px auto; margin-left: 5%; margin-right: 5%;}
+
+}
+
+@media all and (max-width:1024px){
+
+    .main_visual .m_v .title p{ display: none;}
+
+
+    .section02_recruit{margin-right: 5%; margin-left: 5%;}
+    .section02_recruit ul.boxes2 li{float: left; width: 48%; margin-right: 2%; border: 1px solid #eee; height: 240px; margin-bottom: 20px;}
+    .section02_recruit ul.boxes2 li:nth-child(2n){margin-right: 0;}
+    .section02_recruit ul.boxes2 li:nth-child(5n+1){margin-left: 0;}
+    .section02_recruit ul.boxes2 li:nth-child(5n){margin-right: 0; margin-left: 25%;}
+
+
+    .section03_apply table colgroup col.tt{width: 200px;}
+}
+
+@media all and (max-width: 880px){
+
+    .main_visual .m_v{ background-size: contain; height: 21vw;}
+    .main_visual .m_v .title h2{font-size: 7vw;}
+    .main_visual .m_v .navi{display: none;}
+
+    .section01_step{margin-top: 60px;}
+}
+
+@media all and (max-width: 640px){
+
+    #section .titleWrap h3{font-size: 8vw;}
+    #section .titleWrap p{font-size: 3vw;}
+
+
+    /* section01 */
+    .section01_step{margin-left: 5%; margin-right: 5%;}
+    .section01_step ul.boxes li{float: left; width: 100%; margin-right: 0%; border: 1px solid #ccc; display: block; height: 200px; position: relative; margin-bottom: 20px;}
+    .section01_step ul.boxes li:nth-child(2)::before{content: ''; display: none;}
+    .section01_step ul.boxes li:nth-child(3)::before{content: ''; display: none;}
+    .section01_step ul.boxes li>p.img{padding-top: 26px;}
+    .section01_step ul.boxes li>p{font:100 16px 'Noto Sans KR',sans-serif; margin-top: 10px;}
+    .section01_step .subs{text-align: center; font:100 14px/1.8 'Noto Sans KR',sans-serif; color: #666; margin-top: 0px; }
+    .section01_step .subs p{padding-left: 0;}
+
+    /* section02 */
+    .section02_recruit ul.boxes2 li{height: 195px;}
+    .section02_recruit ul.boxes2 li:nth-child(5n){margin-right: 0; margin-left: 0%; width: 100%;}
+    .section02_recruit ul.boxes2 li p.img2{ text-align: center; padding-top: 0px;}
+    .section02_recruit ul.boxes2 li p.img2{margin-top: 19px;}
+    .section02_recruit ul.boxes2 li>p{font-size: 16px; margin-top: 5px;}
+    .section02_recruit .subs2{text-align: center; font:100 14px/1.8 'Noto Sans KR',sans-serif; color: #666; margin-top: 0;}
+    .section02_recruit .subs2 p{padding-left: 0;}
+
+    /* secion03 */
+    .section03_apply table.pc_table,.section03_apply p.subs3{display: none;}
+    .section03_apply table.m_table{display: table;}
+    .section03_apply p.subs3_1{display: block;}
+}

@@ -1,0 +1,36 @@
+/* 공통 요소 CSS */
+.container{
+    width: 90%;
+    max-width: 1132px; margin: 0 auto;
+}
+    /* mobile일 때의 컨테이너 크기 조절을 위한 width:90%/ pc일땐 90%이면 안되니까 max-width:(pc버전의 컨테이너사이즈) 로 지정.*/
+
+/* 모든 환경에서 너비를 동일하게 지정하기 위해 너비값을 90%로 지정하고 최대 너비 값을 1132px로 지정, 중앙정렬합니다. */
+
+
+
+
+
+/* float 해제 */
+.clearFix::after, .container::after{content: ''; display: block; clear: both;}
+
+/* .clearFix 또는 .cfixed 사용 */
+
+
+/* 숨기기위한 클래스 */
+.blind{
+    position: absolute; width: 0; height: 0; line-height: 0; text-indent: -9999px; overflow: hidden;
+}
+
+
+
+.divider{
+    width: 90%;max-width: 1132px;  margin: 0 auto; margin-top: 80px; background-color: #eee;
+}
+.divider2{
+    width: 100%; max-width: 1280px;  margin: 0 auto; margin-top: 40px; background-color: #8593d25b;
+}
+
+
+/* 마지막 요소 mgR 해제 */
+.mgR0{margin-right: 0 !important;}

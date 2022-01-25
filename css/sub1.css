@@ -1,0 +1,122 @@
+
+
+
+/* main_visual */
+figure.main_visual{}
+.main_visual .m_v{background: url(../img/pledis/subpage/sub1_m_v.jpg) no-repeat center; width: 100%; height: 410px; position: relative;}
+.main_visual .m_v .title{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); color: #fff; font: 60px 'Hind', sans-serif;}
+.main_visual .m_v .navi{position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%);}
+.main_visual .m_v .navi a{ color: #ccc; font: 16px 'Hind', sans-serif; opacity: 0.8; display: inline-block;}
+.main_visual .m_v .navi .hm{margin-right: 30px; position: relative;}
+.main_visual .m_v .navi .hm::after{content: '>'; display: block; position: absolute; top: 0; right: -22px; cursor: initial;}
+
+/* section */
+#section{}
+
+/* section01_pledis */
+.section01_pledis{max-width: 1280px; margin: 100px auto;}
+.section01_pledis .titleWrap{text-align: center;}
+.section01_pledis .titleWrap h3{font: 63px 'Barlow CondensedM'; color: #333; margin: 0;}
+.section01_pledis .titleWrap p{font: 18px  'Noto Sans KR', sans-serif;}
+.section01_pledis .titleWrap p strong{color: #8593d2;}
+
+.section01_pledis .conWrap{ text-align: center;}
+.section01_pledis .conWrap img{display: block; margin: 80px auto; width: 80%; max-width: 800px}
+.section01_pledis .conWrap .textWrap{width: 80%; text-align: left; font:100 18px 'Noto Sans KR',sans-serif; margin: 0 auto; display: block;}
+.section01_pledis .conWrap .textWrap span{display: block;}
+.section01_pledis .conWrap .textWrap .kor{color: #333; margin-bottom: 30px;}
+.section01_pledis .conWrap .textWrap .eng{color: #777;}
+
+/* section02_other */
+.section02_other{max-width: 1280px; margin: 0 auto; padding: 50px 0; box-sizing: border-box; background-color: #f1f1f1;}
+
+.section02_other .ci, .contact{ width: 90%; margin: 0 auto;}
+
+.section02_other .other_title{float: left; margin-left: 69px;}
+.section02_other .other_title .line{ width: 40px; height: 3px; background-color: #8593d2; display: inline-block;}
+.section02_other .ci .other_title .line{margin-bottom: 14px;}
+.section02_other .contact .other_title .line{ margin-top: 27px;}
+
+.section02_other .other_title h4{ display: inline-block; font: 45px 'Barlow CondensedM'; margin-left: 20px;}
+
+/* ci */
+.section02_other .ci .ci_wrap{float: right; width: 65%;}
+.section02_other .ci .ci_wrap .ci_bg{ background: url("../img/pledis/subpage/grid.gif") left top; padding: 100px 0; border: 1px solid #eee;}
+.section02_other .ci .ci_wrap .ci_bg .ci_img{ margin: 0 auto; display: block;}
+
+/* contact */
+.section02_other .contact{ margin-top: 120px; padding-bottom: 40px;}
+.section02_other .contact .other_title{
+    float: left; margin-bottom: 20px;
+}
+.section02_other .contact .other_title h4{vertical-align: top; width: 60%;}
+.section02_other .contact .map_wrap{ max-width: 748px; float: right; width: 65%}
+.section02_other .contact .map_wrap iframe{ width: 100%; height: 430px;}
+
+.section02_other .contact .map_wrap .detail{width: 100%; background-color: #fff; display: block; height: 60px; padding: 0 20px; box-sizing: border-box; margin-bottom: 3px;}
+.section02_other .contact .map_wrap .detail ul{}
+.section02_other .contact .map_wrap .detail ul li{display: inline-block; margin-right: 28px;}
+.section02_other .contact .map_wrap .detail ul li p{display: inline-block; font:600 20px/60px 'Hind', sans-serif; color: #8593d2;letter-spacing: -0.6px; padding-right: 17px; position: relative;}
+.section02_other .contact .map_wrap .detail ul li p::after{content: '|'; color: #ddd; display: block; position: absolute; top: -1px ;right: 2px; opacity: 0.8; font-size: 15px;}
+.section02_other .contact .map_wrap .detail ul li span{display: inline-block; font:100 16px/60px 'Noto Sans KR', sans-serif; color: #555; margin-left: 4px; }
+.section02_other .contact .map_wrap .detail ul li:nth-child(3) span{margin-left: 8px;}
+
+
+footer{margin-top: -0 !important;}
+
+
+@media all and (max-width:1279px){
+    .section02_other .contact .map_wrap .detail ul li{margin-right: 1.5vw;}
+    .section02_other .contact .map_wrap .detail ul li p{font:600 1.5vw/60px 'Hind', sans-serif;}
+    .section02_other .contact .map_wrap .detail ul li span{ font:100 1.2vw/60px 'Noto Sans KR', sans-serif; }
+
+}
+
+@media all and (max-width:880px){
+
+    .main_visual .m_v{ background-size: contain; height: 21vw;}
+    .main_visual .m_v .title{font-size: 7vw;}
+    .main_visual .m_v .navi{display: none;}
+
+
+    
+
+
+    .section01_pledis{margin-top: 60px;}
+    .section01_pledis .conWrap .textWrap{font-size: 16px;}
+
+    .section02_other .other_title{float: none; margin-left: 0px; margin-bottom: 60px;}
+    .section02_other .ci .ci_wrap{float: none; width: 100%; box-sizing: border-box;}
+    .section02_other .ci .ci_wrap .ci_bg{ background: url("../img/pledis/subpage/grid.gif") left top; padding: 100px 0; border: 1px solid #eee;}
+    .section02_other .ci .ci_wrap .ci_bg .ci_img{ margin: 0 auto; display: block; width: 60%;}
+
+    .section02_other .contact .other_title{margin-bottom: 60px;}
+    .section02_other .contact .other_title h4{vertical-align: top; width: auto;}
+    .section02_other .contact .map_wrap{ width: 100%; float: none; margin: 0 auto;}
+
+
+    .section02_other .contact .map_wrap .detail ul li p{font:600 2vw/60px 'Hind', sans-serif;}
+    .section02_other .contact .map_wrap .detail ul li span{ font:100 1.6vw/60px 'Noto Sans KR', sans-serif; }
+}
+
+@media all and (max-width: 640px){
+
+    #section .titleWrap h3{font-size: 8vw;}
+    #section .titleWrap p{font-size: 3vw;}
+
+    .section01_pledis .conWrap .textWrap{font-size: 14px;}
+
+    .section02_other .other_title h4{font-size: 7vw;}
+    .section02_other .ci .other_title .line{margin-bottom: 12px;}
+    .section02_other .ci .ci_wrap .ci_bg{padding: 60px 0;}
+    .section02_other .ci .ci_wrap .ci_bg .ci_img{ margin: 0 auto; display: block; width: 50%;}
+    
+    .section02_other .contact .other_title .line{margin-top: 20px;}
+
+    .section02_other .contact .map_wrap .detail{padding: 0 8px;}
+    .section02_other .contact .map_wrap .detail ul li{display: inline-block; margin-right: 6px;}
+    .section02_other .contact .map_wrap .detail ul li p{font:600 2.2vw/60px 'Hind', sans-serif;}
+    .section02_other .contact .map_wrap .detail ul li span{ font:100 1.8vw/60px 'Noto Sans KR', sans-serif; }
+
+    .section02_other .contact .map_wrap iframe{height: 55vw;}
+}

@@ -1,0 +1,90 @@
+.sub2_m{display: none;}
+
+@media all and (max-width: 640px){
+    .sub2_m{display: block; width: 100%;}
+
+}
+
+
+
+/* main_visual */
+figure.main_visual{}
+.main_visual .m_v{background: url(../img/pledis/subpage/sub2_m_v.jpg) no-repeat center; width: 100%; height: 410px; position: relative;}
+.main_visual .m_v .title{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); color: #fff; font: 60px 'Hind', sans-serif;}
+.main_visual .m_v .navi{position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%);}
+.main_visual .m_v .navi a{ color: #ccc; font: 16px 'Hind', sans-serif; opacity: 0.8; display: inline-block;}
+.main_visual .m_v .navi .hm,.art{margin-right: 30px; position: relative;}
+.main_visual .m_v .navi .hm::after,.art::after{content: '>'; display: block; position: absolute; top: 0; right: -22px; cursor: initial;}
+
+/* section */
+#section{}
+
+/* section01 */
+.section01{ max-width: 1280px; margin: 100px auto;}
+.section01 .tab_wrap{text-align: center; margin-bottom: 80px;}
+.section01 .tab_wrap a{display: inline-block;}
+.section01 .tab_wrap a h3{font: 63px 'Barlow CondensedM'; color: #333; margin: 0; display: inline-block; padding: 0 20px; margin: 0 60px; cursor: pointer; position: relative;}
+.section01 .tab_wrap a h3::after{ content: ''; display: block; position: absolute; bottom: 0; left: 0; width: 0%; height: 4px; background-color: #333; transition: all 0.3s;}
+.section01 .tab_wrap a h3:hover::after{width: 100%;}
+.section01 .tab_wrap a h3.singer.on::after{display: block; width: 100%;}
+
+.section01 .con_wrap{width: 100%; max-width: 1280px;}
+.section01 .con_wrap .con_singer{display: block;}
+.section01 .con_wrap .con_singer ul{}
+.section01 .con_wrap .con_singer ul li{width: 100%;}
+.section01 .con_wrap .con_singer ul li .img_bx{width: 50%; height: 0; padding-bottom: 28.12%; float: left; background: #888; overflow: hidden;  max-width: 640px;}
+.section01 .con_wrap .con_singer ul li .img_bx img{width: 100%; height: auto;}
+.section01 .con_wrap .con_singer ul li .detail_bx{width: 50%; height: 0; padding-bottom: 28.12%; float: left; background: #8593d2; position: relative;  max-width: 640px;}
+.section01 .con_wrap .con_singer ul li .detail_bx .txt{ text-align: center; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 85%;}
+.section01 .con_wrap .con_singer ul li .detail_bx .txt .name{font:600 40px 'Hind',sans-serif; color: #fff;}
+.section01 .con_wrap .con_singer ul li .detail_bx .txt .ss{ font:100 16px 'Noto Sans KR',sans-serif; color: #fff; margin-top: 20px; margin-bottom: 50px;}
+.section01 .con_wrap .con_singer ul li .detail_bx .txt a{ color: #fff; display: inline-block; font: 24px 'Hind',sans-serif; width: 30%; text-align: center; border-bottom: 4px solid #fff; height:0; padding-bottom: 7%;}
+
+
+
+
+
+
+@media all and (max-width:1279px){
+
+
+    .section01 .tab_wrap a h3{font: 5.3vw 'Barlow CondensedM'; color: #333; margin: 0; display: inline-block; padding: 0 10px; margin: 0 60px; cursor: pointer; position: relative;}
+    .section01 .tab_wrap a h3::after{ content: ''; display: block; position: absolute; bottom: -3px; left: 0; width: 0%; height: 4px; background-color: #333; transition: all 0.3s;}
+
+
+    .section01 .con_wrap .con_singer ul li .detail_bx .txt .name{font:600 3vw 'Hind',sans-serif;}
+    .section01 .con_wrap .con_singer ul li .detail_bx .txt .ss{ font:100 1.2vw 'Noto Sans KR',sans-serif; margin-bottom: 40px;}
+    .section01 .con_wrap .con_singer ul li .detail_bx .txt a{ font: 2vw 'Hind',sans-serif; border-bottom: 3px solid #fff; }
+}
+
+@media all and (max-width:880px){
+
+    .main_visual .m_v{ background-size: contain; height: 21vw;}
+    .main_visual .m_v .title{font-size: 7vw;}
+    .main_visual .m_v .navi{display: none;}
+
+    .section01{margin-top: 60px;}
+    .section01 .tab_wrap{margin-bottom: 40px;}
+
+}
+
+@media all and (max-width: 640px){
+
+    #section .titleWrap h3{font-size: 8vw;}
+    #section .titleWrap p{font-size: 3vw;}
+
+    .section01 .tab_wrap a h3{font: 7vw 'Barlow CondensedM'; color: #333; margin: 0; display: inline-block; padding: 0 10px; margin: 0 60px; cursor: pointer; position: relative;}
+    .section01 .tab_wrap a h3::after{ content: ''; display: block; position: absolute; bottom: -3px; left: 0; width: 0%; height: 4px; background-color: #333; transition: all 0.3s;}
+
+
+    .section01 .con_wrap .con_singer ul{margin-left: 5%; margin-right: 5%;}
+    .section01 .con_wrap .con_singer ul li .img_bx{width: 100%; height: 0; padding-bottom: 56.25%; float: none; background: #888; overflow: hidden;  max-width: 640px;}
+    .section01 .con_wrap .con_singer ul li .detail_bx{width: 100%; height: 0; padding-bottom: 56.25%; float: none; background: #8593d2; position: relative;  max-width: 640px;}
+    .section01 .con_wrap .con_singer ul li.even{display: flex; flex-direction: column;}
+    .section01 .con_wrap .con_singer ul li.even .detail_bx{order: 2;}
+    .section01 .con_wrap .con_singer ul li.even .img_bx{order: 1;}
+
+    .section01 .con_wrap .con_singer ul li .detail_bx .txt .name{font:600 6vw 'Hind',sans-serif;}
+    .section01 .con_wrap .con_singer ul li .detail_bx .txt .ss{ font:100 2.4vw 'Noto Sans KR',sans-serif; margin-bottom: 40px;}
+    .section01 .con_wrap .con_singer ul li .detail_bx .txt a{ font: 3.8vw 'Hind',sans-serif; border-bottom: 3px solid #fff; }
+}
